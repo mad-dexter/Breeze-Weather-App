@@ -1,0 +1,168 @@
+@import "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css";
+@import "https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap";
+
+/* 
+
+--- 01 TYPOGRAPHY - Outfit
+
+-- FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98        
+
+-- LINE HEIGHT
+  DEFAULT: 1
+
+-- FONT WEIGHTS
+  DEFAULT: 400
+  Medium: 500
+  Semi bold: 600
+  Bold: 700
+
+---- 02 COLORS
+-- Primary: 
+-- Tint: 
+-- Shades:
+-- Accents:
+-- Grey: 
+
+--- 03 SHADOWS-
+
+--- 04 BORDER-RADIUS
+
+--- 05 WHITESPACES
+- SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* Smooth scrolling for chrome and firefox only */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  overflow-x: hidden;
+  color: #000;
+  padding: 1.2rem;
+  background-color: #f1f3f5;
+}
+
+/* Style for dark mode */
+
+.fake-dark-mode {
+  filter: invert(100%);
+  transition: all 0.5s;
+}
+
+/* Dont invert flag icon */
+.fake-dark-mode {
+  filter: invert(100%);
+  transition: all 0.5s;
+}
+
+.fake-dark-mode .flag {
+  filter: invert(100%);
+  transition: all 0.5s;
+}
+
+/* Change border color when in dark mode */
+.fake-dark-mode section {
+  border: 1px solid #000;
+}
+
+.fake-dark-mode section:first-child {
+  border: none;
+}
+
+.fake-dark-mode a {
+  text-decoration: underline !important;
+}
+
+/* End of dark mode code */
+
+.icon-small {
+  font-size: 1.8rem !important;
+}
+
+.icon-medium {
+  font-size: 1.8rem !important;
+}
+
+.icon-light {
+  color: #868e96;
+}
+
+.headingTertiary {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #868e96;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.forecastTertiary {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #868e96;
+}
+
+.siblingHeadingTertiary {
+  color: #000;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.inline-grid-triple {
+  display: grid;
+  grid-template-columns: 10fr 60fr 30fr;
+}
+
+.inline-double {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.inline-grid-double-sm-lg {
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
+.padding-2x {
+  padding: 2.4rem 1.2rem;
+}
+
+.bold {
+  font-weight: bold;
+  color: #000;
+}
+
+.font-size-2 {
+  font-size: 2rem;
+}
+
+.border-bottom {
+  box-shadow: 0 3px 0.5px -2px rgba(0, 0, 0, 0.1);
+}

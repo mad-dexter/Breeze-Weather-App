@@ -1,0 +1,12 @@
+.mapContainer {
+  width: 100%;
+
+  flex: 1;
+  height: 100%;
+  background-color: beige;
+  position: relative;
+}
+
+.map {
+  height: 100%;
+}

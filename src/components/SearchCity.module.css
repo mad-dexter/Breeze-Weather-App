@@ -1,0 +1,21 @@
+.cityItem {
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #868e96;
+}
+
+.cityItem:hover,
+.cityItem a:hover,
+.cityItem a:active {
+  background-color: #f4f4f4;
+  color: #000;
+  text-decoration: underline;
+}
+
+.cityItem a:link,
+.cityItem a:visited {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}

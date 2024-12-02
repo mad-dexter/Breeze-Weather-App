@@ -1,0 +1,34 @@
+.todayWeather {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 65fr 35fr;
+  padding: 2.4rem 1.2rem;
+}
+
+.weatherInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.siblingHeading {
+  margin-top: 2rem;
+  font-size: 4.4rem;
+  font-weight: 600;
+}
+
+.primaryHeading {
+  font-size: 4.4rem;
+  font-weight: 500;
+}
+
+.citySubheader {
+  font-weight: 200;
+  font-size: 1rem;
+  color: #868e96;
+}
+
+.weatherIcon {
+  width: 20.5rem;
+  height: 11.5rem;
+}
