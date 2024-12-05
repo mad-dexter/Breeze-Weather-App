@@ -3,7 +3,7 @@ import { createContext, useContext, useReducer } from "react";
 const CityContext = createContext();
 
 const CITY_LIST = "SELECTED_CITY_LIST";
-const API_KEY = "0Uak1Y0Uj9vL8GgI9iOz4JQPAYRixj2F";
+const API_KEY = import.meta.env.VITE_REACT_APP_ACCUWEATHER_API_KEY;
 const BASE_URL = "https://dataservice.accuweather.com/";
 
 function convertToEmoji(countryCode) {
@@ -136,7 +136,6 @@ function CityContextProvider({ children }) {
 
   async function handleCitySelection(id) {
     if (!id) return;
-    console.log(`Calling Geolocation webservice for ${id}`);
     dispatch({ type: "loading" });
     let selectedCityData;
     try {
@@ -222,7 +221,7 @@ function CityContextProvider({ children }) {
 
   async function getCurrentConditionForCity(id) {
     if (!id) return;
-    console.log(`Calling current cond webservice for ${id}`);
+
     dispatch({ type: "loading" });
 
     // call current condition web service
@@ -243,7 +242,7 @@ function CityContextProvider({ children }) {
 
   async function getHourlyForecastForCity(id) {
     if (!id) return;
-    console.log(`Calling hourly forecast webservice for ${id}`);
+
     dispatch({ type: "loading" });
 
     // call Hourly forecast web service
@@ -264,7 +263,6 @@ function CityContextProvider({ children }) {
 
   async function getDailyForecastFor5DaysCity(id) {
     if (!id) return;
-    console.log(`Calling daily forecast 5 days webservice for ${id}`);
     dispatch({ type: "loading" });
 
     // call daily forecast for 5 days web service
